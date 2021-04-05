@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/tag1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="location/person"/>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/tag2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="location/person"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:onClick="orSearch"/>
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="AND"
+                android:onClick="andSearch"/>
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:onClick="reset"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/totalDoubleRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="541dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="10dp">
+
+    <!--  Buttons for save and cancel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="18dp"
+            android:layout_height="30dp"
+            android:background="@drawable/left_arrow"
+            android:onClick="scrollLeft" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/displayImage"
+            android:layout_width="320dp"
+            android:layout_height="320dp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="18dp"
+            android:layout_height="30dp"
+            android:background="@drawable/right_arrow"
+            android:onClick="scrollRight" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addLocation"
+                android:text="Edit Location"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPerson"
+                android:text="Add Person"
+                android:textAlignment="center" />
+
+
+            <ListView
+                android:id="@+id/personList"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:onClick="moveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move To Different Album"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

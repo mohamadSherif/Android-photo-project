@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_album_add"
+        android:icon="@drawable/ic_action_album_plus"
+        android:title="@string/add"
+        appcompat:showAsAction="always"/>
+
+    <item android:id="@+id/action_image_search"
+        android:icon="@drawable/ic_action_image_search"
+        android:title="@string/searchImage"
+        appcompat:showAsAction="always"/>
+</menu>
